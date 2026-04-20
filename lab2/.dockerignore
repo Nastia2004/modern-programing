@@ -1,0 +1,8 @@
+node_modules
+coverage
+.codex
+.env
+npm-debug.log
+tests
+README.md
+AGENTS.md

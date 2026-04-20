@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: lab2-backend
+    runtime: docker
+    plan: free
+    dockerfilePath: ./lab2/Dockerfile
+    dockerContext: ./lab2
+    healthCheckPath: /
+    autoDeployTrigger: checksPass
+    envVars:
+      - key: NODE_ENV
+        value: production
+
+  - type: web
+    name: lab3-frontend
+    runtime: docker
+    plan: free
+    dockerfilePath: ./lab3/Dockerfile
+    dockerContext: ./lab3
+    healthCheckPath: /health
+    autoDeployTrigger: checksPass
+    envVars:
+      - key: API_URL
+        value: https://lab2-backend.onrender.com

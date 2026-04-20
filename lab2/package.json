@@ -1,0 +1,36 @@
+{
+  "name": "lab2-fastify-rest-api",
+  "version": "1.0.0",
+  "description": "REST API laboratory work built with Fastify and in-memory mock data.",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test \"tests/**/*.test.js\"",
+    "coverage": "c8 --reporter=text --reporter=html --reporter=lcov --check-coverage --lines 30 --functions 30 --branches 30 npm test",
+    "perf": "node tests/performance/performance.js",
+    "check": "node --check src/app.js && node --check src/server.js && node --check src/routes/auth.js && node --check src/routes/users.js && node --check src/routes/projects.js && node --check src/routes/tasks.js && node --check src/utils/http.js && node --check src/utils/relations.js && node --check src/data/store.js && node --check src/schemas/swagger.js && node --check tests/performance/performance.js"
+  },
+  "engines": {
+    "node": ">=24.15.0"
+  },
+  "keywords": [
+    "fastify",
+    "rest",
+    "api",
+    "lab"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cors": "^11.2.0",
+    "@fastify/swagger": "^9.7.0",
+    "@fastify/swagger-ui": "^5.2.5",
+    "fastify": "^5.8.5"
+  },
+  "devDependencies": {
+    "autocannon": "^8.0.0",
+    "c8": "^11.0.0"
+  }
+}
