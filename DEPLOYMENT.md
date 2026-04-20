@@ -110,6 +110,6 @@ Swagger:  https://lab2-backend.onrender.com/docs
 Demo login:
 
 ```text
-email: ostap@example.com
+email: anastasiia@example.com
 password: password123
 ```

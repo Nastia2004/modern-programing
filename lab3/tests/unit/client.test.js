@@ -15,7 +15,7 @@ describe('createApiClient', () => {
     );
 
     await createApiClient().login({
-      email: 'ostap@example.com',
+      email: 'anastasiia@example.com',
       password: 'password123'
     });
 

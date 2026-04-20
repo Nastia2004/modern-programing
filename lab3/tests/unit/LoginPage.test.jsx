@@ -31,7 +31,7 @@ describe('LoginPage', () => {
     await userEvent.click(screen.getByRole('button', { name: /sign in/i }));
 
     expect(loginMock).toHaveBeenCalledWith({
-      email: 'ostap@example.com',
+      email: 'anastasiia@example.com',
       password: 'password123'
     });
   });

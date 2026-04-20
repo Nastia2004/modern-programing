@@ -28,7 +28,7 @@ async function runScenario() {
   const login = await request('/auth/login', {
     method: 'POST',
     body: JSON.stringify({
-      email: 'ostap@example.com',
+      email: 'anastasiia@example.com',
       password: 'password123'
     })
   });

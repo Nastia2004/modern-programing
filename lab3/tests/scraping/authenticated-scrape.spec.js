@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test('authorizes, opens users page and scrapes visible data', async ({ page }) => {
   await page.goto('/login');
 
-  await page.getByLabel('Email').fill('ostap@example.com');
+  await page.getByLabel('Email').fill('anastasiia@example.com');
   await page.getByLabel('Password').fill('password123');
   await page.getByRole('button', { name: 'Sign in' }).click();
 

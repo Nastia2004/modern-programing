@@ -1,8 +1,8 @@
 export const users = [
   {
     id: 1,
-    name: 'Ostap Mamchur',
-    email: 'ostap@example.com',
+    name: 'Anastasiia Vasylyk',
+    email: 'anastasiia@example.com',
     role: 'student',
     createdAt: '2026-04-01T09:00:00.000Z'
   },

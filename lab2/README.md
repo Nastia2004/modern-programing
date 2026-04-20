@@ -130,7 +130,7 @@ npm run perf
 Демо-акаунт:
 
 ```text
-email: ostap@example.com
+email: anastasiia@example.com
 password: password123
 ```
 
@@ -141,7 +141,7 @@ password: password123
 ```bash
 curl -X POST "http://localhost:3000/auth/login" \
   -H "Content-Type: application/json" \
-  -d '{"email":"ostap@example.com","password":"password123"}'
+  -d '{"email":"anastasiia@example.com","password":"password123"}'
 ```
 
 #### GET `/auth/me`

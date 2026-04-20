@@ -57,8 +57,8 @@ const userBase = {
   type: 'object',
   properties: {
     id: { type: 'integer', example: 1 },
-    name: { type: 'string', example: 'Ostap Mamchur' },
-    email: { type: 'string', format: 'email', example: 'ostap@example.com' },
+    name: { type: 'string', example: 'Anastasiia Vasylyk' },
+    email: { type: 'string', format: 'email', example: 'anastasiia@example.com' },
     role: userRole,
     createdAt: { type: 'string', format: 'date-time' }
   }
@@ -69,8 +69,8 @@ const ownerSummary = {
   nullable: true,
   properties: {
     id: { type: 'integer', example: 1 },
-    name: { type: 'string', example: 'Ostap Mamchur' },
-    email: { type: 'string', format: 'email', example: 'ostap@example.com' }
+    name: { type: 'string', example: 'Anastasiia Vasylyk' },
+    email: { type: 'string', format: 'email', example: 'anastasiia@example.com' }
   }
 };
 
@@ -119,7 +119,7 @@ export const taskWithRelations = {
       nullable: true,
       properties: {
         id: { type: 'integer', example: 1 },
-        name: { type: 'string', example: 'Ostap Mamchur' }
+        name: { type: 'string', example: 'Anastasiia Vasylyk' }
       }
     }
   }
@@ -183,12 +183,12 @@ export const authSchemas = {
   login: {
     tags: ['Auth'],
     summary: 'Login',
-    description: 'Mock login for lab3 frontend. Demo credentials: ostap@example.com / password123.',
+    description: 'Mock login for lab3 frontend. Demo credentials: anastasiia@example.com / password123.',
     body: {
       type: 'object',
       required: ['email', 'password'],
       properties: {
-        email: { type: 'string', format: 'email', example: 'ostap@example.com' },
+        email: { type: 'string', format: 'email', example: 'anastasiia@example.com' },
         password: { type: 'string', minLength: 1, example: 'password123' }
       }
     },
