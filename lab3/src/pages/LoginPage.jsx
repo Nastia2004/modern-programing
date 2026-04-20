@@ -6,7 +6,7 @@ export default function LoginPage() {
   const navigate = useNavigate();
   const { isAuthenticated, login, error: sessionError } = useAuth();
   const [form, setForm] = useState({
-    email: 'ostap@example.com',
+    email: 'anastasiia@example.com',
     password: 'password123'
   });
   const [error, setError] = useState('');
@@ -69,7 +69,7 @@ export default function LoginPage() {
         </form>
 
         <div className="demo-note">
-          Demo: <strong>ostap@example.com</strong> / <strong>password123</strong>
+          Demo: <strong>anastasiia@example.com</strong> / <strong>password123</strong>
         </div>
       </section>
     </main>

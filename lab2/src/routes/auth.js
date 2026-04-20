@@ -3,7 +3,7 @@ import { authSchemas } from '../schemas/swagger.js';
 import { createError } from '../utils/http.js';
 
 const demoCredentials = {
-  email: 'ostap@example.com',
+  email: 'anastasiia@example.com',
   password: 'password123'
 };
 

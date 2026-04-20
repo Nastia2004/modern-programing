@@ -59,7 +59,7 @@ http://localhost:5173
 ## Demo Login
 
 ```text
-email: ostap@example.com
+email: anastasiia@example.com
 password: password123
 ```
 

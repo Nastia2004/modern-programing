@@ -19,7 +19,7 @@ test('auth login returns token and current user can be loaded with bearer token'
       method: 'POST',
       url: '/auth/login',
       payload: {
-        email: 'ostap@example.com',
+        email: 'anastasiia@example.com',
         password: 'password123'
       }
     });
@@ -28,7 +28,7 @@ test('auth login returns token and current user can be loaded with bearer token'
 
     const loginBody = loginResponse.json();
     assert.match(loginBody.token, /^mock-token-1-/);
-    assert.equal(loginBody.user.email, 'ostap@example.com');
+    assert.equal(loginBody.user.email, 'anastasiia@example.com');
 
     const meResponse = await app.inject({
       method: 'GET',
@@ -49,7 +49,7 @@ test('invalid login returns unauthorized error', async () => {
       method: 'POST',
       url: '/auth/login',
       payload: {
-        email: 'ostap@example.com',
+        email: 'anastasiia@example.com',
         password: 'wrong-password'
       }
     });
