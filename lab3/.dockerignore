@@ -1,0 +1,12 @@
+node_modules
+coverage
+dist
+.codex
+.env
+npm-debug.log
+test-results
+playwright-report
+tests
+playwright.config.js
+README.md
+AGENTS.md
